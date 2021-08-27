@@ -1,0 +1,385 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.8.5, pytest-6.2.4, py-1.10.0, pluggy-0.13.1 -- /Users/lucasnelson/Desktop/University of Illinois/Senior/FA21/stat430/test_suite/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/lucasnelson/Desktop/University of Illinois/Senior/FA21/stat430
+plugins: aggreport-0.1.5, repeat-0.9.1
+collecting ... collected 200 items
+
+master_test.py::TestClass::test_dummy_test1[1-50] PASSED                 [  0%]
+master_test.py::TestClass::test_dummy_test1[2-50] PASSED                 [  1%]
+master_test.py::TestClass::test_dummy_test1[3-50] PASSED                 [  1%]
+master_test.py::TestClass::test_dummy_test1[4-50] PASSED                 [  2%]
+master_test.py::TestClass::test_dummy_test1[5-50] PASSED                 [  2%]
+master_test.py::TestClass::test_dummy_test1[6-50] PASSED                 [  3%]
+master_test.py::TestClass::test_dummy_test1[7-50] PASSED                 [  3%]
+master_test.py::TestClass::test_dummy_test1[8-50] PASSED                 [  4%]
+master_test.py::TestClass::test_dummy_test1[9-50] PASSED                 [  4%]
+master_test.py::TestClass::test_dummy_test1[10-50] PASSED                [  5%]
+master_test.py::TestClass::test_dummy_test1[11-50] PASSED                [  5%]
+master_test.py::TestClass::test_dummy_test1[12-50] PASSED                [  6%]
+master_test.py::TestClass::test_dummy_test1[13-50] PASSED                [  6%]
+master_test.py::TestClass::test_dummy_test1[14-50] PASSED                [  7%]
+master_test.py::TestClass::test_dummy_test1[15-50] PASSED                [  7%]
+master_test.py::TestClass::test_dummy_test1[16-50] PASSED                [  8%]
+master_test.py::TestClass::test_dummy_test1[17-50] PASSED                [  8%]
+master_test.py::TestClass::test_dummy_test1[18-50] PASSED                [  9%]
+master_test.py::TestClass::test_dummy_test1[19-50] PASSED                [  9%]
+master_test.py::TestClass::test_dummy_test1[20-50] PASSED                [ 10%]
+master_test.py::TestClass::test_dummy_test1[21-50] PASSED                [ 10%]
+master_test.py::TestClass::test_dummy_test1[22-50] PASSED                [ 11%]
+master_test.py::TestClass::test_dummy_test1[23-50] PASSED                [ 11%]
+master_test.py::TestClass::test_dummy_test1[24-50] PASSED                [ 12%]
+master_test.py::TestClass::test_dummy_test1[25-50] PASSED                [ 12%]
+master_test.py::TestClass::test_dummy_test1[26-50] PASSED                [ 13%]
+master_test.py::TestClass::test_dummy_test1[27-50] PASSED                [ 13%]
+master_test.py::TestClass::test_dummy_test1[28-50] PASSED                [ 14%]
+master_test.py::TestClass::test_dummy_test1[29-50] PASSED                [ 14%]
+master_test.py::TestClass::test_dummy_test1[30-50] PASSED                [ 15%]
+master_test.py::TestClass::test_dummy_test1[31-50] PASSED                [ 15%]
+master_test.py::TestClass::test_dummy_test1[32-50] PASSED                [ 16%]
+master_test.py::TestClass::test_dummy_test1[33-50] PASSED                [ 16%]
+master_test.py::TestClass::test_dummy_test1[34-50] PASSED                [ 17%]
+master_test.py::TestClass::test_dummy_test1[35-50] PASSED                [ 17%]
+master_test.py::TestClass::test_dummy_test1[36-50] PASSED                [ 18%]
+master_test.py::TestClass::test_dummy_test1[37-50] PASSED                [ 18%]
+master_test.py::TestClass::test_dummy_test1[38-50] PASSED                [ 19%]
+master_test.py::TestClass::test_dummy_test1[39-50] PASSED                [ 19%]
+master_test.py::TestClass::test_dummy_test1[40-50] PASSED                [ 20%]
+master_test.py::TestClass::test_dummy_test1[41-50] PASSED                [ 20%]
+master_test.py::TestClass::test_dummy_test1[42-50] PASSED                [ 21%]
+master_test.py::TestClass::test_dummy_test1[43-50] PASSED                [ 21%]
+master_test.py::TestClass::test_dummy_test1[44-50] PASSED                [ 22%]
+master_test.py::TestClass::test_dummy_test1[45-50] PASSED                [ 22%]
+master_test.py::TestClass::test_dummy_test1[46-50] PASSED                [ 23%]
+master_test.py::TestClass::test_dummy_test1[47-50] PASSED                [ 23%]
+master_test.py::TestClass::test_dummy_test1[48-50] PASSED                [ 24%]
+master_test.py::TestClass::test_dummy_test1[49-50] PASSED                [ 24%]
+master_test.py::TestClass::test_dummy_test1[50-50] PASSED                [ 25%]
+master_test.py::TestClass::test_dummy_test2[1-50] PASSED                 [ 25%]
+master_test.py::TestClass::test_dummy_test2[2-50] PASSED                 [ 26%]
+master_test.py::TestClass::test_dummy_test2[3-50] PASSED                 [ 26%]
+master_test.py::TestClass::test_dummy_test2[4-50] PASSED                 [ 27%]
+master_test.py::TestClass::test_dummy_test2[5-50] PASSED                 [ 27%]
+master_test.py::TestClass::test_dummy_test2[6-50] PASSED                 [ 28%]
+master_test.py::TestClass::test_dummy_test2[7-50] PASSED                 [ 28%]
+master_test.py::TestClass::test_dummy_test2[8-50] PASSED                 [ 29%]
+master_test.py::TestClass::test_dummy_test2[9-50] PASSED                 [ 29%]
+master_test.py::TestClass::test_dummy_test2[10-50] PASSED                [ 30%]
+master_test.py::TestClass::test_dummy_test2[11-50] PASSED                [ 30%]
+master_test.py::TestClass::test_dummy_test2[12-50] PASSED                [ 31%]
+master_test.py::TestClass::test_dummy_test2[13-50] PASSED                [ 31%]
+master_test.py::TestClass::test_dummy_test2[14-50] PASSED                [ 32%]
+master_test.py::TestClass::test_dummy_test2[15-50] PASSED                [ 32%]
+master_test.py::TestClass::test_dummy_test2[16-50] PASSED                [ 33%]
+master_test.py::TestClass::test_dummy_test2[17-50] PASSED                [ 33%]
+master_test.py::TestClass::test_dummy_test2[18-50] PASSED                [ 34%]
+master_test.py::TestClass::test_dummy_test2[19-50] PASSED                [ 34%]
+master_test.py::TestClass::test_dummy_test2[20-50] PASSED                [ 35%]
+master_test.py::TestClass::test_dummy_test2[21-50] PASSED                [ 35%]
+master_test.py::TestClass::test_dummy_test2[22-50] PASSED                [ 36%]
+master_test.py::TestClass::test_dummy_test2[23-50] PASSED                [ 36%]
+master_test.py::TestClass::test_dummy_test2[24-50] PASSED                [ 37%]
+master_test.py::TestClass::test_dummy_test2[25-50] PASSED                [ 37%]
+master_test.py::TestClass::test_dummy_test2[26-50] PASSED                [ 38%]
+master_test.py::TestClass::test_dummy_test2[27-50] PASSED                [ 38%]
+master_test.py::TestClass::test_dummy_test2[28-50] PASSED                [ 39%]
+master_test.py::TestClass::test_dummy_test2[29-50] PASSED                [ 39%]
+master_test.py::TestClass::test_dummy_test2[30-50] PASSED                [ 40%]
+master_test.py::TestClass::test_dummy_test2[31-50] PASSED                [ 40%]
+master_test.py::TestClass::test_dummy_test2[32-50] PASSED                [ 41%]
+master_test.py::TestClass::test_dummy_test2[33-50] PASSED                [ 41%]
+master_test.py::TestClass::test_dummy_test2[34-50] PASSED                [ 42%]
+master_test.py::TestClass::test_dummy_test2[35-50] PASSED                [ 42%]
+master_test.py::TestClass::test_dummy_test2[36-50] PASSED                [ 43%]
+master_test.py::TestClass::test_dummy_test2[37-50] PASSED                [ 43%]
+master_test.py::TestClass::test_dummy_test2[38-50] PASSED                [ 44%]
+master_test.py::TestClass::test_dummy_test2[39-50] PASSED                [ 44%]
+master_test.py::TestClass::test_dummy_test2[40-50] PASSED                [ 45%]
+master_test.py::TestClass::test_dummy_test2[41-50] PASSED                [ 45%]
+master_test.py::TestClass::test_dummy_test2[42-50] PASSED                [ 46%]
+master_test.py::TestClass::test_dummy_test2[43-50] PASSED                [ 46%]
+master_test.py::TestClass::test_dummy_test2[44-50] PASSED                [ 47%]
+master_test.py::TestClass::test_dummy_test2[45-50] PASSED                [ 47%]
+master_test.py::TestClass::test_dummy_test2[46-50] PASSED                [ 48%]
+master_test.py::TestClass::test_dummy_test2[47-50] PASSED                [ 48%]
+master_test.py::TestClass::test_dummy_test2[48-50] PASSED                [ 49%]
+master_test.py::TestClass::test_dummy_test2[49-50] PASSED                [ 49%]
+master_test.py::TestClass::test_dummy_test2[50-50] PASSED                [ 50%]
+master_test.py::TestClass::test_dummy_test3[1-50] PASSED                 [ 50%]
+master_test.py::TestClass::test_dummy_test3[2-50] PASSED                 [ 51%]
+master_test.py::TestClass::test_dummy_test3[3-50] PASSED                 [ 51%]
+master_test.py::TestClass::test_dummy_test3[4-50] PASSED                 [ 52%]
+master_test.py::TestClass::test_dummy_test3[5-50] PASSED                 [ 52%]
+master_test.py::TestClass::test_dummy_test3[6-50] PASSED                 [ 53%]
+master_test.py::TestClass::test_dummy_test3[7-50] PASSED                 [ 53%]
+master_test.py::TestClass::test_dummy_test3[8-50] PASSED                 [ 54%]
+master_test.py::TestClass::test_dummy_test3[9-50] PASSED                 [ 54%]
+master_test.py::TestClass::test_dummy_test3[10-50] PASSED                [ 55%]
+master_test.py::TestClass::test_dummy_test3[11-50] PASSED                [ 55%]
+master_test.py::TestClass::test_dummy_test3[12-50] PASSED                [ 56%]
+master_test.py::TestClass::test_dummy_test3[13-50] PASSED                [ 56%]
+master_test.py::TestClass::test_dummy_test3[14-50] PASSED                [ 57%]
+master_test.py::TestClass::test_dummy_test3[15-50] PASSED                [ 57%]
+master_test.py::TestClass::test_dummy_test3[16-50] PASSED                [ 58%]
+master_test.py::TestClass::test_dummy_test3[17-50] PASSED                [ 58%]
+master_test.py::TestClass::test_dummy_test3[18-50] PASSED                [ 59%]
+master_test.py::TestClass::test_dummy_test3[19-50] PASSED                [ 59%]
+master_test.py::TestClass::test_dummy_test3[20-50] PASSED                [ 60%]
+master_test.py::TestClass::test_dummy_test3[21-50] PASSED                [ 60%]
+master_test.py::TestClass::test_dummy_test3[22-50] PASSED                [ 61%]
+master_test.py::TestClass::test_dummy_test3[23-50] PASSED                [ 61%]
+master_test.py::TestClass::test_dummy_test3[24-50] PASSED                [ 62%]
+master_test.py::TestClass::test_dummy_test3[25-50] PASSED                [ 62%]
+master_test.py::TestClass::test_dummy_test3[26-50] PASSED                [ 63%]
+master_test.py::TestClass::test_dummy_test3[27-50] PASSED                [ 63%]
+master_test.py::TestClass::test_dummy_test3[28-50] PASSED                [ 64%]
+master_test.py::TestClass::test_dummy_test3[29-50] PASSED                [ 64%]
+master_test.py::TestClass::test_dummy_test3[30-50] PASSED                [ 65%]
+master_test.py::TestClass::test_dummy_test3[31-50] PASSED                [ 65%]
+master_test.py::TestClass::test_dummy_test3[32-50] PASSED                [ 66%]
+master_test.py::TestClass::test_dummy_test3[33-50] PASSED                [ 66%]
+master_test.py::TestClass::test_dummy_test3[34-50] PASSED                [ 67%]
+master_test.py::TestClass::test_dummy_test3[35-50] PASSED                [ 67%]
+master_test.py::TestClass::test_dummy_test3[36-50] PASSED                [ 68%]
+master_test.py::TestClass::test_dummy_test3[37-50] PASSED                [ 68%]
+master_test.py::TestClass::test_dummy_test3[38-50] PASSED                [ 69%]
+master_test.py::TestClass::test_dummy_test3[39-50] PASSED                [ 69%]
+master_test.py::TestClass::test_dummy_test3[40-50] PASSED                [ 70%]
+master_test.py::TestClass::test_dummy_test3[41-50] PASSED                [ 70%]
+master_test.py::TestClass::test_dummy_test3[42-50] PASSED                [ 71%]
+master_test.py::TestClass::test_dummy_test3[43-50] PASSED                [ 71%]
+master_test.py::TestClass::test_dummy_test3[44-50] PASSED                [ 72%]
+master_test.py::TestClass::test_dummy_test3[45-50] PASSED                [ 72%]
+master_test.py::TestClass::test_dummy_test3[46-50] PASSED                [ 73%]
+master_test.py::TestClass::test_dummy_test3[47-50] PASSED                [ 73%]
+master_test.py::TestClass::test_dummy_test3[48-50] PASSED                [ 74%]
+master_test.py::TestClass::test_dummy_test3[49-50] PASSED                [ 74%]
+master_test.py::TestClass::test_dummy_test3[50-50] PASSED                [ 75%]
+master_test.py::TestClass::test_dummy_random[1-50] PASSED                [ 75%]
+master_test.py::TestClass::test_dummy_random[2-50] FAILED                [ 76%]
+master_test.py::TestClass::test_dummy_random[3-50] PASSED                [ 76%]
+master_test.py::TestClass::test_dummy_random[4-50] PASSED                [ 77%]
+master_test.py::TestClass::test_dummy_random[5-50] PASSED                [ 77%]
+master_test.py::TestClass::test_dummy_random[6-50] FAILED                [ 78%]
+master_test.py::TestClass::test_dummy_random[7-50] FAILED                [ 78%]
+master_test.py::TestClass::test_dummy_random[8-50] FAILED                [ 79%]
+master_test.py::TestClass::test_dummy_random[9-50] PASSED                [ 79%]
+master_test.py::TestClass::test_dummy_random[10-50] PASSED               [ 80%]
+master_test.py::TestClass::test_dummy_random[11-50] FAILED               [ 80%]
+master_test.py::TestClass::test_dummy_random[12-50] PASSED               [ 81%]
+master_test.py::TestClass::test_dummy_random[13-50] PASSED               [ 81%]
+master_test.py::TestClass::test_dummy_random[14-50] PASSED               [ 82%]
+master_test.py::TestClass::test_dummy_random[15-50] FAILED               [ 82%]
+master_test.py::TestClass::test_dummy_random[16-50] FAILED               [ 83%]
+master_test.py::TestClass::test_dummy_random[17-50] PASSED               [ 83%]
+master_test.py::TestClass::test_dummy_random[18-50] PASSED               [ 84%]
+master_test.py::TestClass::test_dummy_random[19-50] PASSED               [ 84%]
+master_test.py::TestClass::test_dummy_random[20-50] PASSED               [ 85%]
+master_test.py::TestClass::test_dummy_random[21-50] PASSED               [ 85%]
+master_test.py::TestClass::test_dummy_random[22-50] PASSED               [ 86%]
+master_test.py::TestClass::test_dummy_random[23-50] PASSED               [ 86%]
+master_test.py::TestClass::test_dummy_random[24-50] PASSED               [ 87%]
+master_test.py::TestClass::test_dummy_random[25-50] PASSED               [ 87%]
+master_test.py::TestClass::test_dummy_random[26-50] PASSED               [ 88%]
+master_test.py::TestClass::test_dummy_random[27-50] PASSED               [ 88%]
+master_test.py::TestClass::test_dummy_random[28-50] PASSED               [ 89%]
+master_test.py::TestClass::test_dummy_random[29-50] PASSED               [ 89%]
+master_test.py::TestClass::test_dummy_random[30-50] PASSED               [ 90%]
+master_test.py::TestClass::test_dummy_random[31-50] PASSED               [ 90%]
+master_test.py::TestClass::test_dummy_random[32-50] PASSED               [ 91%]
+master_test.py::TestClass::test_dummy_random[33-50] FAILED               [ 91%]
+master_test.py::TestClass::test_dummy_random[34-50] PASSED               [ 92%]
+master_test.py::TestClass::test_dummy_random[35-50] FAILED               [ 92%]
+master_test.py::TestClass::test_dummy_random[36-50] PASSED               [ 93%]
+master_test.py::TestClass::test_dummy_random[37-50] PASSED               [ 93%]
+master_test.py::TestClass::test_dummy_random[38-50] PASSED               [ 94%]
+master_test.py::TestClass::test_dummy_random[39-50] FAILED               [ 94%]
+master_test.py::TestClass::test_dummy_random[40-50] PASSED               [ 95%]
+master_test.py::TestClass::test_dummy_random[41-50] FAILED               [ 95%]
+master_test.py::TestClass::test_dummy_random[42-50] PASSED               [ 96%]
+master_test.py::TestClass::test_dummy_random[43-50] PASSED               [ 96%]
+master_test.py::TestClass::test_dummy_random[44-50] PASSED               [ 97%]
+master_test.py::TestClass::test_dummy_random[45-50] PASSED               [ 97%]
+master_test.py::TestClass::test_dummy_random[46-50] FAILED               [ 98%]
+master_test.py::TestClass::test_dummy_random[47-50] PASSED               [ 98%]
+master_test.py::TestClass::test_dummy_random[48-50] PASSED               [ 99%]
+master_test.py::TestClass::test_dummy_random[49-50] PASSED               [ 99%]
+master_test.py::TestClass::test_dummy_random[50-50] PASSED               [100%]
+
+=================================== FAILURES ===================================
+______________________ TestClass.test_dummy_random[2-50] _______________________
+
+self = <master_test.TestClass object at 0x7f984ccb4850>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 539 == 901
+E         +539
+E         -901
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[6-50] _______________________
+
+self = <master_test.TestClass object at 0x7f984ccd8220>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 395 == 717
+E         +395
+E         -717
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[7-50] _______________________
+
+self = <master_test.TestClass object at 0x7f984ccd86d0>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 89 == 787
+E         +89
+E         -787
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[8-50] _______________________
+
+self = <master_test.TestClass object at 0x7f984cce0520>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 125 == 793
+E         +125
+E         -793
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[11-50] ______________________
+
+self = <master_test.TestClass object at 0x7f984ccd8fa0>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 157 == 991
+E         +157
+E         -991
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[15-50] ______________________
+
+self = <master_test.TestClass object at 0x7f984ccf59d0>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 721 == 803
+E         +721
+E         -803
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[16-50] ______________________
+
+self = <master_test.TestClass object at 0x7f984cce01f0>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 133 == 743
+E         +133
+E         -743
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[33-50] ______________________
+
+self = <master_test.TestClass object at 0x7f984ccf5850>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 261 == 437
+E         +261
+E         -437
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[35-50] ______________________
+
+self = <master_test.TestClass object at 0x7f984ccf5d60>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 65 == 329
+E         +65
+E         -329
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[39-50] ______________________
+
+self = <master_test.TestClass object at 0x7f984cd06130>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 697 == 851
+E         +697
+E         -851
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[41-50] ______________________
+
+self = <master_test.TestClass object at 0x7f984cd066d0>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 257 == 995
+E         +257
+E         -995
+
+master_test.py:18: AssertionError
+______________________ TestClass.test_dummy_random[46-50] ______________________
+
+self = <master_test.TestClass object at 0x7f984cd07160>
+
+    def test_dummy_random(self):
+        args = [random.randint(0,1000) for i in range(3)]
+>       assert dummy_solution(args) == largest_odd(*args)
+E       assert 401 == 837
+E         +401
+E         -837
+
+master_test.py:18: AssertionError
+--------------------------- aggregate summary report ---------------------------
++------------------------+-----+-----+--------+------+-----+-----+-----+-------+
+|     TestCase Name      | Pas | Fai | Skippe | Pass | AVG | MAX | MIN | STDDE |
+|                        | sed | led |   d    |  Rat |  (s |  (s |  (s | V (s) |
+|                        |     |     |        |  e   |  )  |  )  |  )  |       |
++------------------------+-----+-----+--------+------+-----+-----+-----+-------+
+| master_test.TestClass. | 50  |  0  |   0    | 100. | 0.0 | 0.0 | 0.0 |  0.0  |
+|    test_dummy_test1    |     |     |        | 00%  |     |     |     |       |
++------------------------+-----+-----+--------+------+-----+-----+-----+-------+
+| master_test.TestClass. | 50  |  0  |   0    | 100. | 0.0 | 0.0 | 0.0 |  0.0  |
+|    test_dummy_test2    |     |     |        | 00%  |     |     |     |       |
++------------------------+-----+-----+--------+------+-----+-----+-----+-------+
+| master_test.TestClass. | 50  |  0  |   0    | 100. | 0.0 | 0.0 | 0.0 |  0.0  |
+|    test_dummy_test3    |     |     |        | 00%  |     |     |     |       |
++------------------------+-----+-----+--------+------+-----+-----+-----+-------+
+| master_test.TestClass. | 38  | 12  |   0    | 76.0 | 0.0 | 0.0 | 0.0 |  0.0  |
+|   test_dummy_random    |     |     |        |  0%  |     |  1  |     |       |
++------------------------+-----+-----+--------+------+-----+-----+-----+-------+
+=========================== short test summary info ============================
+FAILED master_test.py::TestClass::test_dummy_random[2-50] - assert 539 == 901
+FAILED master_test.py::TestClass::test_dummy_random[6-50] - assert 395 == 717
+FAILED master_test.py::TestClass::test_dummy_random[7-50] - assert 89 == 787
+FAILED master_test.py::TestClass::test_dummy_random[8-50] - assert 125 == 793
+FAILED master_test.py::TestClass::test_dummy_random[11-50] - assert 157 == 991
+FAILED master_test.py::TestClass::test_dummy_random[15-50] - assert 721 == 803
+FAILED master_test.py::TestClass::test_dummy_random[16-50] - assert 133 == 743
+FAILED master_test.py::TestClass::test_dummy_random[33-50] - assert 261 == 437
+FAILED master_test.py::TestClass::test_dummy_random[35-50] - assert 65 == 329
+FAILED master_test.py::TestClass::test_dummy_random[39-50] - assert 697 == 851
+FAILED master_test.py::TestClass::test_dummy_random[41-50] - assert 257 == 995
+FAILED master_test.py::TestClass::test_dummy_random[46-50] - assert 401 == 837
+======================== 12 failed, 188 passed in 1.00s ========================
