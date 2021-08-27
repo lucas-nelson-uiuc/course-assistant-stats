@@ -112,3 +112,5 @@ if __name__ == '__main__':
     num_students = int(input('Enter number of students: '))
     num_attempts = int(input('Enter number of attempts: '))
     hist_results(simulate_students(num_students=num_students, num_attempts=num_attempts), attempts=num_attempts)
+
+    
