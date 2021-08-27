@@ -43,8 +43,8 @@ def simulate_students(num_students=5, num_attempts=15):
         || none ||
 
     Returns:
-        || report_table ||
-            CLI table detailing score per test and overall score
+        || test_collection ||
+            collection of test performance per student iteration
     '''
 
     test_collection = {}
@@ -94,6 +94,19 @@ def simulate_students(num_students=5, num_attempts=15):
     return test_collection
 
 def hist_results(test_dict, attempts):
+    '''
+    Create histogram of student results
+
+    Parameters:
+        || test_dict ||
+            Dictionary of test results from simulate_students()
+        || attempts ||
+            Number of attempts; provided in terminal call
+
+    Returns:
+        || test_score_hist ||
+            Histogram of simulated student scores
+    '''
     df = pd.DataFrame(test_dict)
     option = input('Select test: {}\n> '.format([col for col in df.columns]))
     uniplot.histogram(df[option], title='Distribution for {}'.format(option),
