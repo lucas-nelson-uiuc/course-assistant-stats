@@ -83,26 +83,20 @@ def simulate_students(num_students=5, num_attempts=15):
 
     test_weights = {test : float(input('Points available for {}: '.format(test))) for test in tests}
     
+    print('\\\\\\\\END OF SIMULATIONS\\\\\\\\')
     print('====================EXPECTED SCORE PER TEST====================')
     for test in test_collection:
         print('{:<{}} :: {}'.format(test,
                                     longest_test_name(test_info),
                                     statistics.mean(test_collection[test])))
-    
-    print('====================PROJ. SUBMISSION SCORE=====================')
-    score_per_test = {test : statistics.mean(test_collection[test]) * test_weights[test] for test in test_collection}
-    total_score = round((sum(score_per_test.values()) / sum(test_weights.values())), 4)
-    print('{:<{}} :: {}'.format('total',
-                                longest_test_name(test_info),
-                                total_score))
 
     return test_collection
 
 def hist_results(test_dict):
     df = pd.DataFrame(test_dict)
     option = input('Select test: {}\n> '.format([col for col in df.columns]))
-    uniplot.histogram(df[option], title=option, color='green',
-                    x_min=0, x_max=100, bins=5)
+    uniplot.histogram(df[option], title='Distribution for {}'.format(option),
+                    x_min=0, x_max=100, bins=5, color='green')
     print('=====RECAP=====================================')
     print('  # of students = {}'.format(df[option].shape[0]))
     print('  mean score    = {}'.format(df[option].mean()))
