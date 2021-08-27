@@ -40,7 +40,11 @@ def simulate_students(num_students=5, num_attempts=15):
     Generate report for provided solution file and test suite
 
     Parameters:
-        || none ||
+        || num_students ||
+            Number of students to simulate
+            
+        || num_attempts ||
+            Number of attempts per student
 
     Returns:
         || test_collection ||
