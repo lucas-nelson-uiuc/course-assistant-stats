@@ -8,7 +8,7 @@ To test the durability of test cases as a way of combatting possible "cheap" sol
 (001) To run your own simulations, create the following files in any directory:
 - NOT PROVIDED IN REPO
   - `dummy_solution.py` : possible student solution for a given question
-  - `largest_odd.py` : approved solution for a given question
+  - `real_solution.py` : approved solution for a given question
 - PROVIDED IN REPO
   - `master_test.py` : file for storing all test cases
   - `master_report.py` : file for testing cases, simulating student submissions, and generating distribution of student scores
