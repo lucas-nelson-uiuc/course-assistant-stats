@@ -1,6 +1,6 @@
 import random
 from dummy_solution import dummy_solution
-from largest_odd import largest_odd
+from real_solution import real_solution
 
 class TestClass:
 
