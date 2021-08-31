@@ -25,4 +25,4 @@ To test the durability of test cases as a way of combatting possible "cheap" sol
 
 ## Desired Output
 
-![Screen Shot 2021-08-27 at 16 35 35](https://user-images.githubusercontent.com/78045025/131191021-b99b30a8-0a59-4cb2-ad4d-c8b1f6f510f5.png)
+![Screen Shot 2021-08-30 at 22 26 09](https://user-images.githubusercontent.com/78045025/131436880-d1cc73f7-3856-4bd1-9d0c-efa6a543f405.png)
