@@ -1,4 +1,4 @@
-# Simulate Student Passing
+# Automated Lab Grading
 
 Automated grader for student-submitted lab assignments.
 
