@@ -1,21 +1,28 @@
 import webbrowser
 import json
-import pprint
 import datetime
 import os
+import pandas as pd
 
 
 class JupyterNotebook:
+    '''
+    Gather and strip student's Jupyter Notebook
+
+    | def clean_notebook_json |
+        > Loads JSON data from student's JSON file
+        > Returns list of cells that contain student's declared function
+    
+    | def write_to_script |
+        > Writes student's functions to Python script for testing
+    '''
 
     def __init__(self, net_id):
         self.net_id = net_id
         self.raw_url = 'https://github-dev.cs.illinois.edu/' + f'/stat430-fa21/{self.net_id}/raw/master/lab02/lab02.ipynb'
 
     def clean_notebook_json(self):
-        # store raw json data from json file in list
-        # with open(f'{self.net_id}.json', 'r') as javascript:
-        #     data = json.load(javascript)
-
+        # strip raw json data from json file
         with open(f'{self.net_id}.json', 'r') as javascript:
             data = json.load(javascript)
         
@@ -29,32 +36,36 @@ class JupyterNotebook:
         with open('student_notebook.py', 'w') as st_nb:
             for script in self.sources:
                 strip_script = []
-                if script[0].strip().startswith('def'):
+                if len(script) > 0 and script[0].strip().startswith('def'):
                     for line in script:
                         st_nb.write(line)
                 st_nb.write('\n')
 
 class ScoringClass:
+    '''
+    Scores student's submission against test cases in `test_class.py`
+    and writes score for student in `lab_report.txt` and `lab_report.csv`
+
+    | def call_master_test |
+        > Calls pytest conditional on test_class.py
+        > Reports scores in student's log file
+    
+    | def collect_test_scores |
+        > Gathers test scores from student's log file
+    
+    | def report_information |
+        > Creates outline for descriptive information of test
+        > Performs similar function for csv file
+    
+    | def student_rows |
+        > Writes student data in per test
+        > Performs similar function for csv file
+    '''
     
     def __init__(self, net_id):
         self.net_id = net_id
 
     def call_master_test(self):
-        '''
-        Call master_test.py a specified count of times
-
-        Parameters:
-            || num_attempts ||
-                estimated number of attempts the average
-                student will try for problem; variable
-
-        Returns:
-            || log.txt ||
-                text file detailing tests conducted
-                and outcome of tests; needed for
-                analysis in report_statistics()
-        '''
-
         cmd = f'pytest -v test_class.py | tee {self.net_id}.log'
         os.system(cmd)
     
@@ -70,9 +81,9 @@ class ScoringClass:
                     test_case_end = line[test_case_start:].find(' ') + test_case_start
                     test_case = line[test_case_start:test_case_end].strip()
                     if 'PASSED' in line:
-                        self.test_collection[test_case] = 1
+                        self.test_collection[test_case] = '1'
                     if 'FAILED' in line:
-                        self.test_collection[test_case] = 0
+                        self.test_collection[test_case] = '0'
 
     def report_information(self):
         with open('lab_report.txt', 'w') as report:
@@ -91,6 +102,12 @@ class ScoringClass:
             header_row = ' | '.join(header)
             report.write('|     {}     | '.format('net_id') + header_row + ' |' + '\n')
             report.write('+----------------+' + table_outline + '+\n')
+
+        with open('lab_report.csv', 'w') as csv_report:
+            # header of lab report
+            headers = ['net_id'] + list(self.test_collection.keys())
+            csv_report.write(','.join(headers))
+            csv_report.write('\n')
     
     def student_rows(self):
         with open('lab_report.txt', 'a+') as report:
@@ -99,12 +116,15 @@ class ScoringClass:
             student_row = ' | '.join(student_row)
             report.write('|{:^16}| '.format(self.net_id) + student_row + ' |')
             report.write('\n')
-            ## separate rows
-            table_outline = ['-' * (len(test) + 2) for test in self.test_collection]
-            table_outline = '+'.join(table_outline)
-            report.write('+----------------+' + table_outline + '+\n')
+        
+        with open('lab_report.csv', 'a+') as csv_report:
+            csv_report.write(self.net_id + ',' + ','.join(self.test_collection.values()))
+            csv_report.write('\n')
 
 class CleanLocalComputer:
+    '''
+    Cleans local folder of .json and .log files
+    '''
     
     def __init__(self, net_id):
         self.net_id = net_id
@@ -126,8 +146,7 @@ def main():
         
         paths_exist = 0
         
-        for i, net_id in enumerate(lines[:20]):
-            
+        for i, net_id in enumerate(lines):
             if os.path.exists(f'{net_id.strip()}.json'):
                 student = JupyterNotebook(net_id.strip())
                 student.clean_notebook_json()
@@ -139,8 +158,8 @@ def main():
                     report.report_information()
                     paths_exist += 1
                 report.student_rows()
-                # garbage = CleanLocalComputer(student.net_id)
-                # garbage.clean_local_folder()
+                garbage = CleanLocalComputer(student.net_id)
+                garbage.clean_local_folder()
             
             else:
                 print('> File does not exist for {}'.format(net_id.strip()))
