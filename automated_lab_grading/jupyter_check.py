@@ -92,7 +92,7 @@ class ScoringClass:
             report.write('TIME      : {}\n'.format(datetime.datetime.now().time()))
             report.write('-------------------------------------\n')
             # lab report for individual students
-            report.write('Table of Student Results\n')
+            report.write('LAB SECTION: hn, onl\n')
             ## top of table skeleton
             table_outline = ['-' * (len(test) + 2) for test in self.test_collection]
             table_outline = '+'.join(table_outline)
