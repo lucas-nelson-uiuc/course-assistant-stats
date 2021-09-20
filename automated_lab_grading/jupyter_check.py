@@ -156,10 +156,11 @@ def main():
                 report.collect_test_scores()
                 if paths_exist == 0:
                     report.report_information()
-                    paths_exist += 1
                 report.student_rows()
                 garbage = CleanLocalComputer(student.net_id)
                 garbage.clean_local_folder()
+                
+                paths_exist += 1
             
             else:
                 print('> File does not exist for {}'.format(net_id.strip()))
