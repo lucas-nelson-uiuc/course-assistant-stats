@@ -87,7 +87,7 @@ class ScoringClass:
         self.lab_num = lab_num
 
     def call_master_test(self):
-        cmd = f'pytest -v test_class.py | tee student_notebook.log'
+        cmd = f'pytest -v test_class_{self.lab_num}.py | tee student_notebook.log'
         os.system(cmd)
 
         source = os.getcwd() + '/student_notebook.log'
@@ -101,8 +101,8 @@ class ScoringClass:
         with open(f'student_notebook.log', 'r') as results:
             lines = results.readlines()
             for line in lines:
-                if line.startswith('test_class.py::TestClass::'):
-                    test_case_start = len('test_class.py::TestClass::') + 5
+                if line.startswith(f'test_class_{self.lab_num}.py::TestClass::'):
+                    test_case_start = len(f'test_class_{self.lab_num}.py::TestClass::') + len('test_')
                     test_case_end = line[test_case_start:].find(' ') + test_case_start
                     test_case = line[test_case_start:test_case_end].strip()
                     if 'PASSED' in line:
@@ -113,7 +113,7 @@ class ScoringClass:
     def report_information(self):
 
         # enter information for student
-        with open('lab_report.txt', 'w') as report:
+        with open('lab_report.txt', 'w') as report, open(os.getcwd() + f'/_{self.lab_num}/{self.lab_num}_report.txt', 'w') as copy_report:
             # header of lab report
             report.write('DATE      : {}\n'.format(datetime.datetime.now().date()))
             report.write('TIME      : {}\n'.format(datetime.datetime.now().time()))
@@ -129,6 +129,14 @@ class ScoringClass:
             header_row = ' | '.join(header)
             report.write('|     {}     | '.format('net_id') + header_row + ' |' + '\n')
             report.write('+----------------+' + table_outline + '+\n')
+            
+            copy_report.write('DATE      : {}\n'.format(datetime.datetime.now().date()))
+            copy_report.write('TIME      : {}\n'.format(datetime.datetime.now().time()))
+            copy_report.write('-------------------------------------\n')
+            copy_report.write('LAB SECTION: hn, onl\n')
+            copy_report.write('+----------------+' + table_outline + '+\n')
+            copy_report.write('|     {}     | '.format('net_id') + header_row + ' |' + '\n')
+            copy_report.write('+----------------+' + table_outline + '+\n')
 
         with open('lab_report.csv', 'w') as csv_report:
             # header of lab report
@@ -137,7 +145,7 @@ class ScoringClass:
             csv_report.write('\n')
     
     def student_rows(self):
-        with open('lab_report.txt', 'a+') as report:
+        with open('lab_report.txt', 'a+') as report, open(os.getcwd() + f'/_{self.lab_num}/{self.lab_num}_report.txt', 'a+') as copy_report:
             ## individual student reports
             student_row = [str(' ' * (len(test) - 1)) + str(self.test_collection[test])  for test in self.test_collection]
             student_row = ' | '.join(student_row)
@@ -147,6 +155,10 @@ class ScoringClass:
             table_outline = ['-' * (len(test) + 2) for test in self.test_collection]
             table_outline = '+'.join(table_outline)
             report.write('+----------------+' + table_outline + '+\n')
+
+            copy_report.write('|{:^16}| '.format(self.net_id) + student_row + ' |')
+            copy_report.write('\n')
+            copy_report.write('+----------------+' + table_outline + '+\n')
         
         with open('lab_report.csv', 'a+') as csv_report:
             csv_report.write(self.net_id + ',' + ','.join(self.test_collection.values()))
